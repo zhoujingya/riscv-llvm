@@ -25,8 +25,13 @@ tutorial), and commit the patch.
 
 ## Support for RISC-V ELF files
 
+> 这里的已经有点过时了， 可以采用其他架构的做法[Xtensa](https://reviews.llvm.org/D64827)
+
+
+
 The final step before getting started on the backend itself is to add the 
 necessary definitions for RISC-V ELF files. This includes:
+
 * Adding the relocation types to 
 `include/llvm/BinaryFormat/ELFRelocs/RISCV.def`
 * Adding the `EM_RISCV` machine definition (see 
